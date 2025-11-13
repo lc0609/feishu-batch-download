@@ -16,14 +16,14 @@
 
 ## 📋 支持的文件类型
 
-| 文件类型 | obj_type | 导出格式 | 说明 |
+| 文件类型 | 导出格式 | 说明 |
 |---------|----------|---------|------|
-| 多维表 | 8 | .xlsx | 飞书多维表格 |
-| 简单表格 | 3 | .xlsx | 飞书电子表格 |
-| 幻灯片 | 30 | .pptx | 飞书演示文稿 |
-| 文档 | 2 | .docx | 飞书文档 |
-| 文档画板 | 22 | .docx | 飞书文档画板 |
-| 思维笔记 | 11 | .mm | 飞书思维导图 |
+| 多维表 | .xlsx | 飞书多维表格 |
+| 简单表格 | .xlsx | 飞书电子表格 |
+| 幻灯片 | .pptx | 飞书演示文稿 |
+| 文档 | .docx | 飞书文档 |
+| 文档画板 | .docx | 飞书文档画板 |
+| 思维笔记 | .mm | 飞书思维导图 |
 
 ## 🚀 安装步骤
 
@@ -31,7 +31,7 @@
 
 1. **克隆或下载项目**
    ```bash
-   git clone https://github.com/your-username/feishu-batch-download.git
+   git clone https://github.com/lc0609/feishu-batch-download.git
    ```
 
 2. **加载扩展程序**
@@ -42,7 +42,8 @@
    - 选择项目文件夹
 
 4. **验证安装**
-   - 访问飞书网页版（https://www.feishu.cn），进入云文档
+   - 访问飞书网页版 https://www.feishu.cn
+   - 进入云文档
    - 点击浏览器工具栏中的扩展图标
    - 应该能看到下载面板
 
@@ -124,9 +125,6 @@ feishu-batch-download/
 
 欢迎提交 Issue 和 Pull Request！
 
-## 📄 许可证
-
-本项目采用 MIT 许可证。详见 [LICENSE](LICENSE) 文件（如有）。
 
 ## 🙏 致谢
 
