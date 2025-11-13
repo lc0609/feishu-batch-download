@@ -1,7 +1,7 @@
 /**
  * Background Script - 处理扩展的后台任务
  */
-
+ 
 // 获取指定URL的Cookie
 async function getCookies(fieldName, url) {
     console.log(`[background.js] Getting cookie '${fieldName}' for URL '${url}'`);

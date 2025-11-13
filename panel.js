@@ -8,6 +8,7 @@ function checkLibrariesLoaded() {
     }
 }
 
+
 // 等待库加载完成（库文件已经在manifest.json中自动加载）
 function waitForLibraries(maxAttempts = 20) {
     // 由于库文件已经在manifest.json的content_scripts中声明，它们应该已经加载

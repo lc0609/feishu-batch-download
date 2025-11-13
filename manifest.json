@@ -7,6 +7,7 @@
     "activeTab",
     "cookies"
   ],
+  
   "host_permissions": [
     "https://*.feishu.cn/*",
     "https://*.larkoffice.com/*"

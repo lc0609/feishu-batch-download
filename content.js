@@ -522,7 +522,7 @@ function buildTreeStructure(files, folders) {
             }
             return;
         }
-        
+         
         // 新文件，直接添加
         addedFiles.set(file.obj_token, file);
         
