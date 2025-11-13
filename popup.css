@@ -1,34 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* 当在网页中使用时，body样式不适用 */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-width: 400px;
-    padding: 0;
-}
-
-/* 确保面板容器样式正确 */
+/* 所有样式都限制在面板容器内，避免影响页面 */
 #feishu-download-panel {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
 }
 
 #feishu-download-panel * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.container {
+#feishu-download-panel .container {
     background: white;
     padding: 24px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+#feishu-download-panel h1 {
     color: #333;
     font-size: 20px;
     margin-bottom: 20px;
@@ -36,11 +24,11 @@ h1 {
     font-weight: 600;
 }
 
-.form-group {
+#feishu-download-panel .form-group {
     margin-bottom: 16px;
 }
 
-label {
+#feishu-download-panel label {
     display: block;
     margin-bottom: 6px;
     color: #555;
@@ -48,8 +36,8 @@ label {
     font-weight: 500;
 }
 
-input[type="text"],
-input[type="number"] {
+#feishu-download-panel input[type="text"],
+#feishu-download-panel input[type="number"] {
     width: 100%;
     padding: 10px 12px;
     border: 2px solid #e0e0e0;
@@ -59,13 +47,13 @@ input[type="number"] {
     font-family: inherit;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus {
+#feishu-download-panel input[type="text"]:focus,
+#feishu-download-panel input[type="number"]:focus {
     outline: none;
     border-color: #667eea;
 }
 
-.btn-primary {
+#feishu-download-panel .btn-primary {
     width: 100%;
     padding: 12px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -79,22 +67,22 @@ input[type="number"]:focus {
     margin-top: 8px;
 }
 
-.btn-primary:hover {
+#feishu-download-panel .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
-.btn-primary:active {
+#feishu-download-panel .btn-primary:active {
     transform: translateY(0);
 }
 
-.btn-primary:disabled {
+#feishu-download-panel .btn-primary:disabled {
     opacity: 0.6;
     cursor: not-allowed;
     transform: none;
 }
 
-.btn-secondary {
+#feishu-download-panel .btn-secondary {
     width: 100%;
     padding: 10px;
     background: #f3f4f6;
@@ -107,21 +95,21 @@ input[type="number"]:focus {
     transition: all 0.2s;
 }
 
-.btn-secondary:hover {
+#feishu-download-panel .btn-secondary:hover {
     background: #e5e7eb;
     border-color: #d1d5db;
 }
 
-.btn-secondary:active {
+#feishu-download-panel .btn-secondary:active {
     background: #d1d5db;
 }
 
-.btn-secondary:disabled {
+#feishu-download-panel .btn-secondary:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
-.btn-link {
+#feishu-download-panel .btn-link {
     background: none;
     border: none;
     color: #667eea;
@@ -130,11 +118,11 @@ input[type="number"]:focus {
     font-size: 12px;
 }
 
-.btn-link:hover {
+#feishu-download-panel .btn-link:hover {
     color: #764ba2;
 }
 
-.file-list {
+#feishu-download-panel .file-list {
     max-height: 400px;
     overflow-y: auto;
     border: 1px solid #e0e0e0;
@@ -143,7 +131,7 @@ input[type="number"]:focus {
     background: #fafafa;
 }
 
-.file-item {
+#feishu-download-panel .file-item {
     display: flex;
     align-items: center;
     padding: 8px;
@@ -156,41 +144,41 @@ input[type="number"]:focus {
     box-sizing: border-box;
 }
 
-.file-item:hover {
+#feishu-download-panel .file-item:hover {
     background: #f5f5f5;
 }
 
-.file-item[style*="cursor: pointer"] {
+#feishu-download-panel .file-item[style*="cursor: pointer"] {
     width: 100%;
 }
 
-.file-item input[type="checkbox"] {
+#feishu-download-panel .file-item input[type="checkbox"] {
     margin-right: 10px;
     cursor: pointer;
 }
 
-.file-item-label {
+#feishu-download-panel .file-item-label {
     flex: 1;
     cursor: pointer;
     font-size: 13px;
     color: #333;
 }
 
-.file-item-info {
+#feishu-download-panel .file-item-info {
     font-size: 11px;
     color: #999;
     margin-left: 8px;
 }
 
-.folder-container {
+#feishu-download-panel .folder-container {
     margin-bottom: 2px;
 }
 
-.folder-children {
+#feishu-download-panel .folder-children {
     margin-left: 0;
 }
 
-.expand-icon {
+#feishu-download-panel .expand-icon {
     user-select: none;
     display: inline-block;
     width: 12px;
@@ -198,33 +186,33 @@ input[type="number"]:focus {
     transition: transform 0.2s;
 }
 
-.result-container,
-.error-container {
+#feishu-download-panel .result-container,
+#feishu-download-panel .error-container {
     margin-top: 20px;
     padding: 16px;
     border-radius: 6px;
     animation: slideDown 0.3s ease-out;
 }
 
-.result-container {
+#feishu-download-panel .result-container {
     background: #f0f9ff;
     border: 1px solid #bae6fd;
 }
 
-.error-container {
+#feishu-download-panel .error-container {
     background: #fef2f2;
     border: 1px solid #fecaca;
 }
 
-.result-container h3,
-.error-container h3 {
+#feishu-download-panel .result-container h3,
+#feishu-download-panel .error-container h3 {
     color: #333;
     font-size: 14px;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-.result-content {
+#feishu-download-panel .result-content {
     word-break: break-all;
     color: #1e40af;
     font-size: 13px;
@@ -235,7 +223,7 @@ input[type="number"]:focus {
     border: 1px solid #e0e0e0;
 }
 
-.error-content {
+#feishu-download-panel .error-content {
     word-break: break-all;
     color: #dc2626;
     font-size: 13px;
@@ -246,13 +234,13 @@ input[type="number"]:focus {
     border: 1px solid #e0e0e0;
 }
 
-.loading {
+#feishu-download-panel .loading {
     margin-top: 20px;
     text-align: center;
     padding: 20px;
 }
 
-.spinner {
+#feishu-download-panel .spinner {
     border: 3px solid #f3f3f3;
     border-top: 3px solid #667eea;
     border-radius: 50%;
@@ -278,7 +266,7 @@ input[type="number"]:focus {
     }
 }
 
-.loading span {
+#feishu-download-panel .loading span {
     color: #666;
     font-size: 14px;
 }
