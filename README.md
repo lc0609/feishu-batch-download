@@ -90,8 +90,6 @@ feishu-batch-download/
 ├── background.js          # 后台服务脚本（处理 Cookie 和消息传递）
 ├── content.js            # 内容脚本（注入到飞书页面，处理文件获取和下载）
 ├── panel.js              # 面板脚本（处理 UI 交互和文件打包）
-├── popup.html            # 弹出窗口 HTML（备用）
-├── popup.js              # 弹出窗口脚本（备用）
 ├── popup.css             # 样式文件
 ├── jszip.min.js          # JSZip 库
 ├── FileSaver.min.js      # FileSaver库

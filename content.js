@@ -618,7 +618,7 @@ function createPanel() {
     `;
     
     const title = document.createElement('h2');
-    title.textContent = '飞书批量下载-青亿帆';
+    title.textContent = '飞书批量下载';
     title.style.cssText = 'margin: 0; font-size: 16px; font-weight: 600;';
     
     const closeBtn = document.createElement('button');
