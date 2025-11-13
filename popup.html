@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞书批量下载</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>飞书批量下载</h1>
+        
+        <button id="loadFilesBtn" class="btn-primary">获取所有文件</button>
+        <button id="downloadBtn" class="btn-secondary" style="display: none; margin-top: 8px;">下载选中文件</button>
+        
+        <div id="fileListContainer" style="display: none; margin-top: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <span style="font-weight: 600;">文件列表 (<span id="fileCount">0</span> 个文件)</span>
+                <div>
+                    <button id="selectAllBtn" class="btn-link" style="font-size: 12px; padding: 4px 8px;">全选</button>
+                    <button id="selectNoneBtn" class="btn-link" style="font-size: 12px; padding: 4px 8px;">全不选</button>
+                </div>
+            </div>
+            <div id="fileList" class="file-list"></div>
+        </div>
+        
+        <div id="error" class="error-container" style="display: none;">
+            <h3>错误信息:</h3>
+            <div id="errorContent" class="error-content"></div>
+        </div>
+        
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <span id="loadingText">正在处理...</span>
+        </div>
+        
+        <div id="result" class="result-container" style="display: none;">
+            <h3>结果:</h3>
+            <div id="resultContent" class="result-content"></div>
+        </div>
+    </div>
+    
+    <!-- 加载本地库文件（请先下载库文件到扩展目录） -->
+    <script src="jszip.min.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
+

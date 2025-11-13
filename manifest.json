@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "飞书批量下载",
+  "version": "1.0.0",
+  "description": "批量下载飞书文件",
+  "permissions": [
+    "activeTab",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://*.feishu.cn/*",
+    "https://*.larkoffice.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.feishu.cn/*",
+        "https://*.larkoffice.com/*"
+      ],
+      "js": ["jszip.min.js", "FileSaver.min.js", "content.js", "panel.js"],
+      "css": ["popup.css"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["jszip.min.js", "FileSaver.min.js"],
+      "matches": [
+        "https://*.feishu.cn/*",
+        "https://*.larkoffice.com/*"
+      ]
+    }
+  ]
+}
+
